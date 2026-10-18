@@ -1963,11 +1963,11 @@ border-bottom-color: #05f08a; */
     border: 1px solid #e3ecfa;
     background-color: #e3ecfa;
     height: 1280px;
-   
+
 
     .page1 {
 
-margin-top: 100px;
+        margin-top: 100px;
         display: flex;
 
 
@@ -1981,7 +1981,7 @@ margin-top: 100px;
         padding-left: 60px;
 
         h1 {
-color: #4a4a4b;
+            color: #4a4a4b;
             width: 500px;
             font-size: 55px;
             font-weight: 400;
@@ -2038,97 +2038,213 @@ color: #4a4a4b;
         }
 
     }
-    .box{
-display: flex;
-margin-top: 100px;
-justify-content: center;
-gap: 50px;
-.advance{
-    /* border: 1px solid blue; */
-    height: 200px;
-    width: 300px;
-}
-.expert{
-    margin-top: 10px;
-    h3{
-        font-size: 25px;
-        margin-top: 20px;
-        font-weight: 400;
-    }
-    p{
-       margin-top: 20px; 
-       line-height: 1.4; 
-       font-weight: 300;
-       
-    }
-    .feature-icon{
-        font-size: 26px;
-        color: #0d81ee;
-        
-    }
-}
+
+    .box {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        gap: 50px;
+
+        .advance {
+            /* border: 1px solid blue; */
+            height: 200px;
+            width: 300px;
+        }
+
+        .expert {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 25px;
+                margin-top: 20px;
+                font-weight: 400;
+            }
+
+            p {
+                margin-top: 20px;
+                line-height: 1.4;
+                font-weight: 300;
+
+            }
+
+            .feature-icon {
+                font-size: 26px;
+                color: #0d81ee;
+
+            }
+        }
 
     }
+
     .emergency-banner1 {
-    border: 1px solid rgb(244, 241, 241);
-    /* border-radius: 20px; */
-    width: 1110px;
-    margin-left: 70px;
-    margin-top: -300px;
-    height: 180px;
-    background-color: #cbd1db;
-    padding-top: 20px;
-}
-
-.emergency-content1 {
-    /* border: 1px solid white; */
-    width: 670px;
-    margin-top: 30px;
-    margin-left: 40px;
-
-    h3 {
-        color: rgb(132, 131, 131);
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-        font-size: 22px;
-        font-family: 200;
+        border: 1px solid rgb(244, 241, 241);
+        /* border-radius: 20px; */
+        width: 1110px;
+        margin-left: 70px;
+        margin-top: -300px;
+        height: 180px;
+        background-color: #cbd1db;
+        padding-top: 20px;
     }
 
-    p {
+    .emergency-content1 {
+        /* border: 1px solid white; */
+        width: 670px;
+        margin-top: 30px;
+        margin-left: 40px;
+
+        h3 {
+            color: rgb(132, 131, 131);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-size: 22px;
+            font-family: 200;
+        }
+
+        p {
+            color: rgb(132, 131, 131);
+            line-height: 22px;
+        }
+    }
+
+    .emr1 {
+        /* border: 1px solid rgb(10, 16, 12); */
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 200px;
+        margin-left: 840px;
+        margin-top: -79px;
+        height: 50px;
+        padding-top: 15px;
+        /* border-radius: 35px; */
+        padding-left: 25px;
+        padding-right: 15px;
+        background-color: #0a66f1;
+
+
+        i {
+            margin-right: 15px;
+
+        }
+
+        .emergency-btn1 {
+            text-decoration: none;
+            color: white;
+
+        }
+    }
+
+    .find {
+        margin-top: 20px;
+        margin-left: 960px;
         color: rgb(132, 131, 131);
-        line-height: 22px;
     }
 }
 
-.emr1 {
-    /* border: 1px solid rgb(10, 16, 12); */
-     border: 1px solid black;
-         border-radius: 5px;  
-    width: 200px;
-    margin-left: 840px;
-    margin-top: -79px;
-    height: 50px;
-    padding-top: 15px;
-    /* border-radius: 35px; */
-    padding-left: 25px;
-    padding-right: 15px;
-    background-color: #0a66f1;
+.container1 {
+    display: flex;
+    gap: 90px;
+    margin-top: 90px;
    
 
-    i {
-        margin-right: 15px;
+height: 300px;
+    .footer {
+        gap: 50px;
+        margin-left: 60px;
+        display: flex;
+        align-items: flex-start;
+        .nav-column {
+        display: inline-block;
+        /* border: 1px solid black; */
+        width: 115px;
+        height: 220px;
+        h6{
+            font-size: 15px;
+             color: #747b88;
+             font-family: 100;
+        }
 
     }
-
-    .emergency-btn1 {
-        text-decoration: none;
-         color: white;
+     .footer-nav {
+        /* text-align: center; */
+        margin-top: 20px;
+        display:inline-block;
+     line-height: 2.1;
         
     }
+    .footer-nav a{
+            transition: transform 1s ease;
+        }
+        .footer-nav a:hover{
+            transform: translateX(-8px);
+        }
+       
+    }
+    
+
+    
+
+   
+
+    .brand-section {
+        a {
+            color: #252b35;
+            text-decoration: none;
+        }
+
+        .sitename {
+            font-size: 24px;
+
+        }
+
+        /* border: 1px solid blue; */
+        width: 380px;
+        margin-left: 68px;
+
+        .brand-description {
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+
+            .contact-item {
+                font-size: 15px;
+                margin-top: 20px;
+
+                i {
+                    color: #065eec;
+                }
+            }
+        }
+    }
 }
-.find{
-    margin-top: 20px;
-    margin-left: 960px;
-     color: rgb(132, 131, 131);
+.footer-bottom{
+    margin-top: 40px;
+    display: flex;
+    gap: 200px;
+    
+    
+    height: 70px;
+    .site{
+        margin-left: 70px;
+        
+        width: 220px;
+    }
+    .legal-links{
+        display: flex;
+        gap: 10px;
+        width: 700px;
+        margin-left: 100px;
+a{
+    text-decoration: none;
+    color: #5a6270;
 }
+    }
+    .credits{
+        color:#5a6270 ;
+        a{
+            color: #065eec;
+        }
+    }
 }

@@ -1,31 +1,71 @@
+let h2 = document.getElementById("hi");
+h2.innerText = "My Todo List";
+h2.classList.add("text-light");
 
-function addTask(){
-    const newTask=document.getElementById("taskInput").value.trim();
+let p = document.getElementById("p");
+p.innerText = "Organize your day,one task at a time";
+p.classList.add("text-light");
 
+function showText() {
+  let input = document.getElementById("userInput");
+  
+  let ol = document.getElementById("myList");
+  let task = input.value;
+  let span = document.createElement("span");
+  span.innerText = task;
+  if (task === "") {
+    return;
+  }
 
-const LI=document.createElement("li");
-LI.classList.add("p-3");
+  let li = document.createElement("li");
+  li.classList.add("ms-2", "mb-2");
+  li.classList.add("list-group-item", "d-flex", "align-items-center","gap-3");
 
+  let btn = document.createElement("button");
+  btn.innerText = "Delete";
+  btn.classList.add("btn", "btn-warning", "ms-3");
 
-const SPAN=document.createElement("span");
-SPAN.textContent=newTask;
+  btn.onclick = () => li.remove();
+  let btn1 = document.createElement("button");
+  btn1.innerText = "Edit";
+  btn1.classList.add("btn", "btn-primary", "ms-3");
 
-const BUTTON=document.createElement("button");
-BUTTON.classList.add("btn","btn-danger","btn-sm","ms-3");
-BUTTON.textContent="Delete";
+  btn1.onclick = function () {
+    input.value = span.innerText;
+    input.focus();
 
-BUTTON.onclick=() => LI.remove();
+    btn1.style.display = "none";
+    saveBtn.style.display = "inline-block";
+  };
 
-const BUTTON1=document.createElement("button");
-BUTTON1.classList.add("btn","btn-primary","btn-sm","ms-3");
-BUTTON1.textContent="Edit";
-BUTTON1.onClick=()=>LI.contentEditable;
+  let saveBtn = document.createElement("button");
+  saveBtn.innerText = "save";
+  saveBtn.className = "btn btn-primary  ms-3";
+  saveBtn.style.display = "none";
 
-LI.appendChild(SPAN);
+  saveBtn.onclick = function () {
+    task = input.value.trim();
+    if (task.trim() === "") return;
+    span.innerText = task;
+    input.value = "";
+    saveBtn.style.display = "none";
+    btn1.style.display = "inline-block";
+  };
+  let buttons = document.createElement("div");
+  buttons.classList.add("d-flex","gap-2","ms-auot", "flex-shrink-0");
+  buttons.append( btn1, saveBtn, btn);
+ 
 
-LI.appendChild(BUTTON1);
-LI.appendChild(BUTTON);
+  span.style.flexGrow = "1";
+  span.style.overflowWrap = "anywhere";
+  
 
-document.getElementById("taskList").appendChild(LI);
-document.getElementById("taskInput").value="";
+  let checkbox=document.createElement("input");
+  checkbox.type="checkbox";
+  checkbox.classList.add("form-check-input","ms-2");
+ li.append(checkbox,span,buttons);
+//  li.prepend(checkbox);
+  ol.appendChild(li);
+
+  input.value = "";
 }

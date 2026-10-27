@@ -1,0 +1,64 @@
+
+/* Task list responsive layout */
+#myList {
+    padding-left: 2rem;
+    width: 100%;
+}
+
+#myList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+}
+
+#myList li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+#myList li .d-flex {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/* Mobile: 320px–767px */
+@media (min-width: 320px) and (max-width: 767px) {
+    #myList {
+        padding-left: 1.5rem;
+    }
+
+    #myList li {
+        gap: 6px;
+        padding: 10px 6px;
+    }
+
+    #myList li button {
+        padding: 5px 7px;
+        font-size: 12px;
+        margin-left: 0 !important;
+    }
+
+    #myList li .d-flex {
+        gap: 5px;
+    }
+}
+
+/* Tablet: 768px–1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #myList li {
+        gap: 10px;
+    }
+}
+
+/* Desktop: 1024px and above */
+@media (min-width: 1024px) {
+    #myList li {
+        gap: 12px;
+    }
+}
+
+
+

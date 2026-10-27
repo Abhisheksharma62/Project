@@ -52,10 +52,10 @@ function showText() {
     btn1.style.display = "inline-block";
   };
   let buttons = document.createElement("div");
-  buttons.classList.add("d-flex","gap-2","ms-auot", "flex-shrink-0");
+  buttons.classList.add("d-flex","gap-2","ms-auto", "flex-shrink-0");
   buttons.append( btn1, saveBtn, btn);
  
-
+span.classList.add("task-text");
   span.style.flexGrow = "1";
   span.style.overflowWrap = "anywhere";
   
